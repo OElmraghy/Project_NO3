@@ -772,6 +772,143 @@ a {
 
 /* End Testimonials */
 
+/* Start Team Members */
+
+.team-members {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.team-members .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.team-members .box {
+  position: relative;
+}
+
+.team-members .box::before,
+.team-members .box::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.team-members .box::before {
+  width: calc(100% - 60px);
+  z-index: -2;
+}
+
+.team-members .box::after {
+  width: 0;
+  z-index: -1;
+  background-color: #e4e4e4;
+}
+
+.team-members .box:hover::after {
+  width: calc(100% - 60px);
+}
+
+.team-members .box .data {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.team-members .box .data img {
+  width: calc(100% - 60px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.team-members .box .data .social {
+  display: flex;
+  width: 60px;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.team-members .box .data .social a {
+  display: flex;
+  width: 60px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-members .box .data .social i {
+  color: #777;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.team-members .box .data .social a:hover i {
+  color: var(--main-color);
+}
+
+.team-members .box .info {
+  padding-left: 80px;
+}
+
+.team-members .box .info h3 {
+  color: var(--main-color);
+  margin-top: 22px;
+  font-size: 22px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.team-members .box .info p {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.team-members .box:hover img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.team-members .box:hover .info h3 {
+  color: #777;
+}
+
+/* End Team Members */
+
 /* Start Animation */
 @keyframes up-and-down {
   0%,
